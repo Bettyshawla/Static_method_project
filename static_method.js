@@ -1,21 +1,21 @@
 /*
-============= There is only one Governor in the state, add static methods and 
-            properties you'd expect a Governor to have.
+There is only one Governor in the state, add static methods and 
+properties you'd expect a Governor to have.
 log the properties and test the methods (don't instantiate)
 */
 class Governor {
-    
-    static nameIs = "Larry Hogan"; 
+
+    static nameIs = "Larry Hogan";
     static dateOfBirth = "May 25, 1956";
     static party = "Republican Party";
 
 
-    static greetings (greet){
+    static greetings(greet) {
         console.log(`Hello, welcome to my beautiful state!`);
-    
+
     }
 
-    static serving(){
+    static serving() {
         console.log('Larry Hogan is the 62nd governor of Maryland.')
     }
 }

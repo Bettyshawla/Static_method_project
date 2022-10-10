@@ -1,11 +1,3 @@
-/*
-Think of three properties all people share, set them with the constructor
-Think of three methods all people share
-Create a PostalWorker class that inherits from person, add some methods
-Create a Chef class that inherits from person, add some methods
-Create 2 PostalWorkers and 2 Chefs, log them and test all their methods
-*/
-
 class Person {
     constructor(name, age, resident){
         this.name = name;
@@ -48,20 +40,20 @@ postalWorker1.deliver()
 postalWorker2.greet()
 postalWorker2.deliver()
 
-console.log("====================")
+//I USED THIS CONSOLE LOG IS TO SEPARATE THE 2 CLASSES, (to make it more visible for you)
+console.log("")
 
 class Chef extends Person{
     constructor(name, age, resident){
         super(name, age,resident)
     }
     cleaning(){
-        console.log(`${this.name} like cleaning the cooking station before cooking.`)
+        console.log(`${this.name} like cleaning the kitchen before cooking.`)
     }
     cooking(){
-        console.log(`${this.name} has his own special dish at the ${this.resident} location.`)
+        console.log(`Chef ${this.name} has his own special dish at the ${this.resident} location.`)
     }
 }
-
 
 const chef1 = new Chef ("Dave Rogan", "35", "Florida")
 const chef2 = new Chef ("John Doe", "40", "Texas")
