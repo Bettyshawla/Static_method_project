@@ -4,29 +4,27 @@
 log the properties and test the methods (don't instantiate)
 */
 class Governor {
-    constructor(name, age, states){
-        this.name = name;
-        this.age = age;
-        this.states = states;
-    }
-    static isBusy = true;
+    
+    static nameIs = "Larry Hogan"; 
+    static dateOfBirth = "May 25, 1956";
+    static party = "Republican Party";
+
 
     static greetings (greet){
         console.log(`Hello, welcome to my beautiful state!`);
+    
+    }
+
+    static serving(){
+        console.log('Larry Hogan is the 62nd governor of Maryland.')
     }
 }
-/*
-Think of three properties all people share, set them with the constructor
-Think of three methods all people share
-Create a PostalWorker class that inherits from person, add some methods
-Create a Chef class that inherits from person, add some methods
-Create 2 PostalWorkers and 2 Chefs, log them and test all their methods
-*/
 
-// let sam = new Governor ('sam', '37', 'Maryland');
-console.log(Governor.isBusy);
+//properties
+console.log(Governor.nameIs);
+console.log(Governor.dateOfBirth);
+console.log(Governor.party);
+
+//methods
 Governor.greetings();
-
-class Person extends Governor{
-    
-}
+Governor.serving();
